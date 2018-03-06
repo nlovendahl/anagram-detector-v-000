@@ -8,6 +8,11 @@ def initialize(word)
 end
 
 def match(array)
+
+# Solution:
+# array.select {|x| x.split("").sort == @name.split("").sort}
+
+#Mine:
   word_array = @word.split("").sort
   anagrams = []
   array.each do |x|
