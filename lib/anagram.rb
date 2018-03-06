@@ -9,7 +9,13 @@ end
 
 def match(array)
   word_array = @word.split("").sort
-  array
+  anagrams = []
+  array.each do |x|
+    if word_array == x.split("").sort
+      anagrams << x
+    end
+  end
+  anagrams
 end
 
 end
