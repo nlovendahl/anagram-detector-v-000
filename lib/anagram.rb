@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(array)
-    anagrams = array.find_all {|w| w.split("") == self.word.split("").sort}
+    anagrams = array.find_all {|w| w.split("").sort == self.word.split("").sort}
     anagrams
   end
 
