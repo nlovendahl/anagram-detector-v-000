@@ -7,8 +7,8 @@ class Anagram
   end
 
   def match(array)
-    array.select{|w| w.split.sort.join == self.word}
-    array
+    anagrams = array.select{|w| w.split.sort.join == self.word}
+    anagrams
   end
 
 end
